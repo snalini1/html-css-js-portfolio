@@ -1,382 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="logo">Nalini Singh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">Nalini Singh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic-2.png" alt="Nalini Singh profile picture">
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+        <div class="section__text">
+            <h1 class="title">Nalini Singh</h1>
+            <p class="section__text__p2">Computer Science & Cognitive Psychology Student @ Northeastern University</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/NaliniSingh_Resume_Northeastern.pdf')"
+                >
+                Download CV
+                </button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'"
+                >
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="My LinkedIn Profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/nalini1singh'"
+                />
+                <img 
+                src="./assets/github.png" 
+                alt="My Github Profile"
+                class="icon" 
+                onclick="location.href='https://github.com/snalini1'"
+                />
+            </div>
         </div>
-      </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#about'"/>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.jpeg"
+                alt="Profile picture"
+                class="about-pic"
+                />
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>
+                        Hello! I am Nalini Singh, a sophomore student majoring in Computer Science and Cognitive Psychology at Northeastern University. 🎓 
+                        I consider myself a lifelong learner, someone who loves to research and solve complex problems. 
+                        So far, I have tried teaching a neural network how to play Pacman 👾, 
+                        conducted research on psychological biases 🔍, and applied AI/ML technologies for societal benefit. 
+                        For instance, I made a webapp that can scan for harmful ingredients in packaged goods with just one click 📸, 
+                        and now I'm trying to use deep learning to detect skin cancer 🔬. 
+                        I love to tinker with tech and will continue to do so to create more human-centered technologies ❤️.
+                    </p>
+                </div>
+                <div class="text2-container">
+                    <p>
+                        I thrive on creativity and collaboration, and I'm always eager to discuss new projects or geek out over innovative technologies and arts 💡🎨. 
+                        If you share my passion for technology that betters the world, feel free to reach out 📫. Let's connect and explore how we can make a difference together! 🌟
+                    </p>
+                </div>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#experience'"/>
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+        <p class="section__text__p1">My Journey</p>
+        <h1 class="title">Experience</h1>
+        <div class="timeline">
+
+            <div class="container left-container">
+                <img src="assets/wecode.png">
+                <div class="text-box">
+                    <h2>Harvard WeCode</h2>
+                    <small>Dec. 2024 - present</small>
+                    <p> ● Take on a leadership role in publicizing and organizing the WECode Conference, the largest student-run
+                        conference for women engineers in the nation with over 900 attendees annually. </p>
+                    <p> ● Promote the conference on 10+ platforms using social media, digital communities, and networks.</p>
+                    <p> ● Engage in local outreach activities to enhance conference visibility and participation.</p>
+                    <span class="left-container-arrow"></span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+
+            <div class="container right-container">
+                <img src="assets/northeasternlogo.png">
+                <div class="text-box">
+                    <h2>Language and Mind Lab, Northeastern</h2>
+                    <small>Sep. 2024 - present</small>
+                    <p> ● Collaborate with a multidisciplinary team of 10 researchers to apply cognitive science tools to engage in
+                        data-driven analysis and synthesize literature to support ongoing research initiative. </p>
+                    <p> ● Synthesize findings from over 15 research articles to build a comprehensive understanding of psychological
+                        dualism. </p>
+                    <p> ● Managed and coordinated the participation of over 80 individuals overseeing their orientation, instruction, and
+                        active engagement in the research process. </p>
+                    <span class="right-container-arrow"></span>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
-          </div>
+
+            <div class="container left-container">
+                <img src="assets/sglogo.png">
+                <div class="text-box">
+                    <h2>Saudi German Hospital</h2>
+                    <small>Jul. 2022 - Aug. 2022</small>
+                    <p> ● Managed over 200 technological assets using advanced inventory management systems; participated in 5 vendor
+                        consultations to enhance equipment procurement and maintenance strategies. </p>
+                    <p> ● Assisted in the routine maintenance and troubleshooting of 15+ types of diagnostic equipment and acquired
+                        in-depth technical knowledge of medical devices.</p>
+                    <p> ● Delivered comprehensive technical presentations to senior leadership, summarizing 1 month's worth of key
+                        findings and offering strategic recommendations for the management and enhancement of medical technology
+                        operations. </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container right-container">
+                <img src="assets/bioscanlogo.png">
+                <div class="text-box">
+                    <h2>Bioscan Research</h2>
+                    <small>Dec. 2021</small>
+                    <p> ● Developed a comprehensive technical understanding of 'Cerebo,' completing over 40 hours of specialized
+                        training in product functionality and the patenting process </p>
+                    <p> ● Conducted a detailed 2-week study on Traumatic Brain Injury, and delivered an in-depth presentation to over 15
+                        staff members, outlining critical product applications and recent research findings related to Traumatic Brain
+                        Injury. </p>
+                    <p> ● Participated in UBER's mobility bootcamp at the Government of India’s incubation center, iCreate, engaging
+                        with 10+ cutting-edge mobility solutions and expanding professional network by connecting with 20 industry
+                        experts.</p>
+                    <span class="right-container-arrow"></span>
+                </div>
+            </div>
+
+            <div class="container left-container">
+                <img src="assets/lactalislogo.png">
+                <div class="text-box">
+                    <h2>Lactalis</h2>
+                    <small>Apr. 2020</small>
+                    <p> ● Participated in corporate training programs to gain insights into the differences between school and corporate life. </p>
+                    <p> ● Engaged in hands-on learning experiences to develop skills in communication, teamwork, and time management. </p>
+                    <span class="left-container-arrow"></span>
+                </div>
+            </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#projects'"/>
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1-image.png" alt="Project 1"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">SafeScan: The webapp that detects harmful ingredients</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onlick="location.href='https://github.com/dhawalnegi1/SafeScan'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" 
+                    onlick="location.href='https://www.youtube.com/watch?v=mxxPxOLVXRQ'">
+                        Live Demo
+                    </button>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2-image.png" alt="Project 2"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">IntelliPac: The Pacman-playing neural network [In-progress]</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onlick="location.href='https://github.com/snalini1/IntelliPac'">
+                        Github
+                    </button>
+                </div>
             </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3-image.png" alt="Project 3"
+                    class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">MelanoMind: Melanoma-detecting ML model [In-progress]</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" 
+                    onlick="location.href='https://github.com/snalini1/MelanoMind'">
+                        Github
+                    </button>
+                </div>
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
         </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+    </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./#contact'"/>
     </section>
     <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" 
+                class="icon contact-icon">
+                <p> <a href="mailto:singh.nal@northeastern.edu">singh.nal@northeastern.edu</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" 
+                class="icon contact-icon">
+                <p> <a href="https://www.linkedin.com/in/nalini1singh">LinkedIn</a></p>
+            </div>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
-        </div>
-      </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Nalini Singh. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
