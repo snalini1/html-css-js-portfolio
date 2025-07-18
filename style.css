@@ -476,22 +476,48 @@ section {
 .color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250, 250, 250);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 300px;        /* flexible but minimum width */
+    max-width: 350px;       /* consistent max width */
+    min-height: 500px;      /* equal height for all project cards */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-container:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project-img {
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    border-radius: 1rem;
+    width: 100%;
+    height: 200px;        /* fixed height for images */
+    object-fit: cover;    /* keep aspect ratio and crop */
+    margin-bottom: 1rem;
 }
 
 .project-title {
-    margin: 1rem;
+    margin: 1rem 0;
     color: black;
+    text-align: center;
 }
 
 .project-btn {
     color: black;
     border-color: rgb(163, 163, 163);
+    margin: 0.3rem;
+}
+
+.btn-container {
+    margin-top: auto;  /* pushes buttons to the bottom */
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
 }
 
 /* CONTACT */
