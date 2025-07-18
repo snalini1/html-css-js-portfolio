@@ -310,10 +310,28 @@ section {
 }
 
 .section_pic-container {
-    height: 400 px;
-    width: 400 px;
+    height: 400px;
+    width: 400px;
     margin: auto 0;
 }
+
+/* NEW EDITS */
+#about p {
+    margin-bottom: 1rem;       /* space between paragraphs */
+    line-height: 1.6;          /* improve readability */
+    color: #1c1c1c;            /* make all text the same color */
+}
+
+#about ul {
+    padding-left: 2rem;        /* indent bullet points */
+    margin-top: 1rem;          /* spacing before bullet list */
+    margin-bottom: 1rem;       /* spacing after bullet list */
+}
+
+#about ul li {
+    margin-bottom: 0.5rem;     /* spacing between bullet items */
+}
+
 
 /* EXPERIENCE SECTION */
 
